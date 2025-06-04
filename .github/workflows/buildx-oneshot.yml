@@ -2,7 +2,11 @@ name: buildx
 
 on:
   workflow_dispatch:
-  
+
+permissions:
+  contents: read
+  packages: write
+
 jobs:
   docker:
     runs-on: ubuntu-latest
